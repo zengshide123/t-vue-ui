@@ -1,11 +1,19 @@
-import TRow from './components/row/index.js';
-import TCol from './components/col/index.js';
+import TRow from './components/row/index';
+import TCol from './components/col/index';
 import TContainer from './components/container/index';
+import THeader from './components/header/index';
+import TMain from './components/main/index';
+import TFooter from './components/footer/index';
+import TAside from './components/aside/index';
 
 const components = [
     TRow,
     TCol,
-    TContainer
+    TContainer,
+    THeader,
+    TMain,
+    TFooter,
+    TAside
 ];
 
 const install = function(Vue,opts = {}){
@@ -26,6 +34,10 @@ export default {
     // 按需引入
     TRow,
     TCol,
-    TContainer
+    TContainer,
+    THeader,
+    TMain,
+    TFooter,
+    TAside
 
 }

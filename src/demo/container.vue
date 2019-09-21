@@ -1,14 +1,17 @@
 <template>
-    <TContainer>
-        <div>
-            container
-        </div>
-        <div>
-            container11
-        </div>
-        <TRow>
-            container11
-        </TRow>
+    <TContainer direction="vertical">
+        <THeader :height="30" style="background:orange">
+            theader
+        </THeader>
+        <TContainer>
+            <TAside :width="100">taside</TAside>
+            <TMain>
+                tmain
+            </TMain>
+        </TContainer>
+        <TFooter :height="20" style="background:pink">
+            tfooter
+        </TFooter>
     </TContainer>
 </template>
 
