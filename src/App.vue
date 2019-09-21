@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <Layout/>
+    <Contianer/>
   </div>
 </template>
 
 <script>
 import Layout from './demo/layout';
+import Contianer from './demo/container'
 export default {
   name: 'app',
   components:{
-    Layout
+    Layout,
+    Contianer
   }
 }
 </script>

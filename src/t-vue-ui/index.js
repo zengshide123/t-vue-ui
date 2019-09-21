@@ -1,9 +1,11 @@
 import TRow from './components/row/index.js';
 import TCol from './components/col/index.js';
+import TContainer from './components/container/index';
 
 const components = [
     TRow,
-    TCol
+    TCol,
+    TContainer
 ];
 
 const install = function(Vue,opts = {}){
@@ -24,5 +26,6 @@ export default {
     // 按需引入
     TRow,
     TCol,
+    TContainer
 
 }
