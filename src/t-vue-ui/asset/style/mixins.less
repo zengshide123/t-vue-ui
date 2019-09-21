@@ -1,0 +1,22 @@
+// 清楚浮动 
+
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+}
+
+// 块状格式化清除浮动
+
+.formatter-block{
+       
+}
+.formatter-block::before,.formatter-block::after{
+   content: '';
+   display: table;
+}
+.formatter-block::after{
+   clear: both;
+}

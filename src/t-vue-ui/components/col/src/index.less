@@ -1,0 +1,24 @@
+.t-col{
+    float: left;
+    box-sizing: border-box;
+}
+[class*=t-push],[class*=t-pull]{
+    position: relative;
+}
+.loop(@i) when (@i < 25){
+    .t-col-@{i}{
+      width: (100%/24)*@i;
+    }
+    .t-push-@{i}{
+      left:  (100%/24)*@i;
+    }
+    .t-pull-@{i}{
+      right:  (100%/24)*@i;  
+    }
+    .t-offset-@{i}{
+      margin-left: (100%/24)*@i;  
+    }
+    .loop(@i+1);
+}
+.loop(1);
+

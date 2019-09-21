@@ -1,0 +1,40 @@
+.t-row{
+    position: relative;
+    box-sizing: border-box;
+}
+.t-row-flex{
+    display: flex;
+    &::after,&::before{
+        display: none;
+    }
+}
+.t-justify-start{
+    justify-content: flex-start;
+}
+.t-justify-end{
+    justify-content: flex-end;
+}
+.t-justify-center{
+    justify-content: center;
+}
+.t-justify-space-between{
+    justify-content: space-between;
+}
+.t-justify-space-around{
+    justify-content: space-around;
+}
+.t-align-top{
+    align-items: flex-start;
+}
+.t-align-bottom{
+    align-items: flex-end;
+}
+.t-align-middle{
+    align-items:center;
+}
+.t-align-stretch{
+    align-items:stretch;
+}
+.t-align-baseline{
+    align-items:baseline;
+}
